@@ -1,9 +1,10 @@
 import { createReducer } from "@reduxjs/toolkit";
 import userActions from '../actions/userActions'
 
-const { sign_in } = userActions;
+const { sign_in, sign_up } = userActions;
 
 const inicialState = {
+    perfiles: [],
     id: "",
     name: "",
     lastName: "",
@@ -19,7 +20,7 @@ const userReducer = createReducer(inicialState,
     (builder) => {
         builder
             .addCase(sign_in.fulfilled, (state, action) => {
-                //console.log('Carga de accion', action.payload.response)
+                console.log('Action desde reductor sign-in', action.payload.response)
                 const { success, response } = action.payload
                 if (success) {
                     let { user, token } = response
@@ -38,6 +39,14 @@ const userReducer = createReducer(inicialState,
                     return newState
                 } else {
                     return console.log('Error')
+                }
+            })
+
+            .addCase(sign_up.fulfilled, (state, action)=>{
+                console.log('action desde redcutor', action)
+                return {
+                    ...state,
+                    perfiles: action.payload
                 }
             })
     })
