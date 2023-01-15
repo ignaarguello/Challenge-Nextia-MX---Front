@@ -25,22 +25,22 @@ export default function FormSignIn() {
 
         if (res.payload.success) {
             Swal.fire({
-                title: 'Excellent!',
-                text: "Login successful, thanks",
+                title: 'Ingreso Exitoso',
+                text: "Descubre las maravillas de Eugenia !",
                 icon: 'success',
                 showCancelButton: false,
                 confirmButtonColor: '#3085d6',
                 confirmButtonText: 'Ok'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    navigate('www.google.com')
+                    navigate('/home')
                 }
             }
             )
         } else {
             Swal.fire({
                 title: 'Error!',
-                text: `Wrong Login, Try again! - ${res.payload.response}`,
+                text: `${res.payload.response}`,
                 icon: 'error'
             }
             )
@@ -103,15 +103,7 @@ export default function FormSignIn() {
 
                         <div className="flex items-center justify-between">
                             <div className="flex items-center">
-                                <input
-                                    id="remember-me"
-                                    name="remember-me"
-                                    type="checkbox"
-                                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                                />
-                                <label htmlFor="remember-me" className="ml-2 block text-sm text-white">
-                                    Remember me
-                                </label>
+                                <Link to='/sign-up' className="font-medium texto-rosa hover:text-indigo-500">¿ Deseas Registrarte ?</Link>
                             </div>
 
                             <div className="text-sm">
