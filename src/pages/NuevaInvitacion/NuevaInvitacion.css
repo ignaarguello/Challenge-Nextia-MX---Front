@@ -1,0 +1,26 @@
+@media screen and (min-width: 320px) {
+  #containerNuevaInvitacion {
+    border: 2px solid red;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #titulo-nuevaInvitacion {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 18px;
+  }
+
+  #button-crearInvitacion {
+    padding: 8px;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    width: 50%;
+    background-color: #ff6a52;
+    color: white;
+  }
+}
