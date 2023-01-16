@@ -1,0 +1,147 @@
+@media screen and (min-width: 320px) {
+  #container-general__navbar {
+    /*  border: 2px solid red; */
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    background-color: #0d0f19;
+  }
+
+  #container_items-nav {
+    /* border: 2px solid saddlebrown; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px;
+  }
+
+  #container-logo-nav {
+    /* border: 2px solid khaki; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #logo-netxia-nav {
+    width: 75%;
+  }
+
+  .item-nav {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+  }
+
+  .item-nav__sign-out {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #ff6a52;
+  }
+
+  .ref-container-nav {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #container-general__navbar {
+    /* border: 2px solid red; */
+    flex-direction: row-reverse;
+  }
+
+  #container_items-nav {
+    /* border: 2px solid saddlebrown; */
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+  }
+
+  #container-logo-nav {
+    /* border: 2px solid khaki; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #logo-netxia-nav {
+    width: 45%;
+  }
+
+  .item-nav {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    transition: 0.4s ease;
+  }
+
+  .item-nav:hover {
+    color: #ff6a52;
+  }
+
+  .item-nav__sign-out {
+    transition: 0.6s ease;
+    cursor: pointer;
+  }
+
+  .item-nav__sign-out:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #container-general__navbar {
+    width: 20%;
+    height: 100vh;
+    flex-direction: column-reverse;
+  }
+
+  #container_items-nav {
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+    padding-top: 3rem;
+  }
+
+  #container-logo-nav {
+    width: 100%;
+    height: 40%;
+  }
+
+  .ref-container-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #logo-netxia-nav {
+    width: 45%;
+  }
+
+  .item-nav {
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+}

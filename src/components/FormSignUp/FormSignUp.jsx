@@ -101,7 +101,7 @@ export default function FormSignUp() {
                         </div>
                     </form>
                     <div className='flex items-center justify-center'>
-                        <Link to='/sign-in' className="font-medium text-white hover:text-indigo-500">¿ Ya tienes cuenta ? Ingresa!</Link>
+                        <Link to='/sign-in' className="font-medium text-white hover:text-indigo-500">¿ Ya tienes cuenta ? Ingresá</Link>
                     </div>
                 </div>
             </div>
