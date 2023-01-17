@@ -6,7 +6,7 @@ export default function Layout(props) {
   return (
     <div id='container-general__layout'>
       <Navbar/>
-      {/* <div className="content-layout">{props.children}</div> */}
+      <div className="content-layout">{props.children}</div>
     </div>
   )
 }

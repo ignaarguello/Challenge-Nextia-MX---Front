@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Home from './pages/Home';
-import MyInvitacion from './pages/MyInvitaciones';
+import MisInvitacion from './pages/MisInvitaciones/MisInvitaciones';
 import NuevaInvitacion from './pages/NuevaInvitacion/NuevaInvitacion'
 import Info from './pages/Info'
 
@@ -46,9 +46,9 @@ function App() {
       <Layout>
         <Routes>
           <Route element={<ProteccionRutas isAllowed={loggeado === true} reDirect={"/sign-in"} />}>
-            <Route path="/" element={<MyInvitacion />} />
-            <Route path="/home" element={<MyInvitacion />} />
-            <Route path="/my-invitaciones" element={<MyInvitacion />} />
+            <Route path="/" element={<MisInvitacion />} />
+            <Route path="/home" element={<MisInvitacion />} />
+            <Route path="/my-invitaciones" element={<MisInvitacion />} />
             <Route path="/new-invitacion" element={<NuevaInvitacion />} />
             <Route path="/info" element={<Info />} />
           </Route>
