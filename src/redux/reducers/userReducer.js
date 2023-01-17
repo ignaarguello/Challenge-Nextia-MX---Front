@@ -66,7 +66,7 @@ const userReducer = createReducer(inicialState,
 
             .addCase(log_out.fulfilled, (state, action) => {
                 const { success, response } = action.payload
-                
+
                 if (success) {
                     localStorage.removeItem('token')
                     let newState = {
