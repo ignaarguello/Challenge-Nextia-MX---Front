@@ -5,6 +5,7 @@ import invitacionesActions from '../../redux/actions/invitacionesActions'
 import './NuevaInvitacion.css'
 import { useNavigate } from "react-router";
 import Swal from 'sweetalert2';
+import Layout from '../../layout/Layout'
 
 
 export default function NuevaInvitacion() {
@@ -15,6 +16,8 @@ export default function NuevaInvitacion() {
   const invitadoRef = useRef()
   const entradaRef = useRef()
   const caducidadRef = useRef()
+  const horaRef = useRef()
+
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
@@ -26,11 +29,13 @@ export default function NuevaInvitacion() {
     const data = {
       invitado: invitadoRef.current?.value,
       fechaEntrada: entradaRef.current?.value,
+      horaEntrada: horaRef.current?.value,
       caducidad: caducidadRef.current?.value,
       userId: id,
     }
 
-    console.log(id)
+    console.log(data)
+  
 
     let res = await dispatch(crear_invitacion(data))
 
@@ -60,23 +65,26 @@ export default function NuevaInvitacion() {
 
 
   return (
-    <div id='containerNuevaInvitacion'>
-      <h2 id='titulo-nuevaInvitacion'>Nueva Invitación</h2>
-      <div id='container-Form__nuevaInvitacion'>
-        <div className='containerInputs'>
-          <label className='label__nuevaInvitacion'>Nombre del invitado:</label>
-          <input type="text" id='input--name__nuevaInvitacion' className='input__nuevaInvitacion' placeholder='Nombre del invitado' ref={invitadoRef} />
+    <Layout>
+      <div id='containerNuevaInvitacion'>
+        <h2 id='titulo-nuevaInvitacion'>Nueva Invitación</h2>
+        <div id='container-Form__nuevaInvitacion'>
+          <div className='containerInputs'>
+            <label className='label__nuevaInvitacion'>Nombre del invitado:</label>
+            <input type="text" id='input--name__nuevaInvitacion' className='input__nuevaInvitacion' placeholder='Nombre del invitado' ref={invitadoRef} />
+          </div>
+          <div className='containerInputs'>
+            <label className='label__nuevaInvitacion'>Fecha de entrada:</label>
+            <input type="date" className='input__nuevaInvitacion' ref={entradaRef} />
+            <input type="time" className='input__nuevaInvitacion' required ref={horaRef}></input>
+          </div>
+          <div className='containerInputs'>
+            <label className='label__nuevaInvitacion'>Fecha de caducidad:</label>
+            <input type="date" className='input__nuevaInvitacion' ref={caducidadRef} />
+          </div>
+          <button id='button-crearInvitacion' onClick={handleSubmit}>Crear Invitación</button>
         </div>
-        <div className='containerInputs'>
-          <label className='label__nuevaInvitacion'>Fecha de entrada:</label>
-          <input type="date" className='input__nuevaInvitacion' ref={entradaRef} />
-        </div>
-        <div className='containerInputs'>
-          <label className='label__nuevaInvitacion'>Fecha de caducidad:</label>
-          <input type="date" className='input__nuevaInvitacion' ref={caducidadRef} />
-        </div>
-        <button id='button-crearInvitacion' onClick={handleSubmit}>Crear Invitación</button>
       </div>
-    </div>
+    </Layout>
   )
 }

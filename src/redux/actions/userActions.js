@@ -35,10 +35,9 @@ const sign_up = createAsyncThunk('sign_up', async (data) => {
 })
 
 const sign_in_token = createAsyncThunk('sign_in_token', async(token)=>{
-    let headers = {headers: {'Authorization' : `Bearer ${token}`}}
+    let headers = {headers: {'Authorization': `Bearer ${token}`}}
     try{
         let res = await axios.post(`${BASE_URL}/auth/token`,null, headers)
-        console.log('signTOKEN', res)
         return {
             success: true,
             response: {

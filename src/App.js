@@ -32,7 +32,9 @@ function App() {
     if (token) {
       dispatch(userActions.sign_in_token(token.token.user))
     }
-  }, [loggeado])
+  }, [])
+
+  console.log(loggeado)
 
   return (
     <>
@@ -43,28 +45,20 @@ function App() {
           <Route path="/sign-up" element={<SignUp />} />
         </Route>
       </Routes>
-      <Layout>
+  
         <Routes>
           <Route element={<ProteccionRutas isAllowed={loggeado === true} reDirect={"/sign-in"} />}>
-            <Route path="/" element={<MisInvitacion />} />
             <Route path="/home" element={<MisInvitacion />} />
             <Route path="/my-invitaciones" element={<MisInvitacion />} />
             <Route path="/new-invitacion" element={<NuevaInvitacion />} />
             <Route path="/info" element={<Info />} />
           </Route>
         </Routes>
-      </Layout>
+     
+
     </>
   );
 }
 
-
-/*
-<Route element={<ProteccionRutas isAllowed={loggeado} reDirect={"/home"} />}>
-          <Route path="/home" element={<Home />} />
-          <Route path="/" element={<Home />} />
-        </Route> 
-
-*/
 
 export default App;
