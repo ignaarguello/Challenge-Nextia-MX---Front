@@ -20,6 +20,7 @@ export default function MisInvitaciones() {
   }, [invitacionesDelete])
 
 
+
   return (
     <Layout>
       <div id='container-MisInvitaciones' >

@@ -10,6 +10,7 @@ const initialState = {
     invitacionesDelete:[],
 }
 
+
 const invitacionesReducer = createReducer(initialState, (builder) => {
     builder
         .addCase(crear_invitacion.fulfilled, (state, action) => {
