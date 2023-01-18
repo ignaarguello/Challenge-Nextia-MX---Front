@@ -34,7 +34,7 @@ export default function FormSignIn() {
                 confirmButtonText: 'Ok'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    navigate('/home')
+                    navigate('/my-invitaciones')
                 }
             }
             )

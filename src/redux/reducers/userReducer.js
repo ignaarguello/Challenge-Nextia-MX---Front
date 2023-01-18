@@ -45,7 +45,8 @@ const userReducer = createReducer(inicialState,
             .addCase(sign_in_token.fulfilled, (state, action) => {
                 const { success, response } = action.payload
                 if (success) {
-                    let { user, token } = response
+                    let { token } = response
+                    let {user} = response.user
                     let newState = {
                         ...state,
                         nombre: user.nombre,
@@ -71,9 +72,9 @@ const userReducer = createReducer(inicialState,
                     localStorage.removeItem('token')
                     let newState = {
                         ...state,
-                        name: '',
-                        photo: '',
-                        logged: false,
+                        nombre: '',
+                        foto: '',
+                        loggeado: false,
                         token: ''
                     }
                     return newState

@@ -13,11 +13,14 @@
 @media screen and (min-width: 1440px) {
   #container-general__layout {
     display: flex;
-    flex-direction: row;
   }
 
   .content-layout {
-    width: 100%;
+ /*    border: 2px solid red; */
+    width:80%;
     height: 100vh;
+    align-self: end;
+    margin-left: 18rem;
+    z-index: 1;
   }
 }
