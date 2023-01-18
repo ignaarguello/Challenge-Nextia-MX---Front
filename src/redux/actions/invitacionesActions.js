@@ -35,6 +35,7 @@ const get_mis_invitaciones = createAsyncThunk('get_mis_invitaciones', async (id)
 })
 
 
+
 const delete_invitacion = createAsyncThunk('delete_invitacion', async (id) => {
     let url = `${BASE_URL}/invitaciones/${id}`
     try {

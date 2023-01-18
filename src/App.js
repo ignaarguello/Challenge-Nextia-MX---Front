@@ -34,8 +34,6 @@ function App() {
     }
   }, [])
 
-  console.log(loggeado)
-
   return (
     <>
       <Routes>
