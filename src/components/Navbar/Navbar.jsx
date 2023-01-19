@@ -14,7 +14,7 @@ export default function Navbar() {
   let { token } = useSelector(store => store.userReducer)
 
 
-    async function logout(event) {
+  async function logout(event) {
     Swal.fire({
       title: 'Seguro quieres salir?',
       icon: 'info',
@@ -24,7 +24,7 @@ export default function Navbar() {
       confirmButtonText: 'Cerrar Sesion'
     }).then((result) => {
       if (result.isConfirmed) {
-        let res = dispatch(log_out(token));
+        dispatch(log_out(token));
         navigate('/')
       }
     })
