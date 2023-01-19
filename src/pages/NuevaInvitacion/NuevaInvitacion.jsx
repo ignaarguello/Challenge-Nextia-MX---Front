@@ -34,7 +34,7 @@ export default function NuevaInvitacion() {
       userId: id,
     }
 
-    console.log(data)
+    console.log(entradaRef)
   
 
     let res = await dispatch(crear_invitacion(data))

@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import  'bootstrap/dist/css/bootstrap.min.css' ;
+import 'bootstrap/dist/css/bootstrap.min.css';
+import QRCode from "react-qr-code";
+import './ButtonModal.css'
+import { Link } from 'react-router-dom';
 
-export default function ButtonModal() {
+export default function ButtonModal(props) {
+  let { nombre, fecha, hora, caducidad, id } = props
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -15,15 +20,24 @@ export default function ButtonModal() {
         Ver Detalles
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Detalles de Invitación</Modal.Title>
+      <Modal show={show} onHide={handleClose} id={id}>
+        <Modal.Header closeButton className='header-modal'>
+          <Modal.Title className='titulo-modal'>Detalles de Invitación</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Detalles</Modal.Body>
+        <Modal.Body className="body-modal">
+          <QRCode className='QR-CODE' value="https://www.google.com" fgColor='#071431' />
+          <h3 className='titulo-invitado__modal'>Invitado: {nombre}</h3>
+          <h3 className='info-card__modal'>Entrada: {fecha}</h3>
+          <h3 className='info-card__modal'>Hora de entrada: {hora} hs</h3>
+          <h3 className='info-card__modal'>Caducidad: {caducidad}</h3>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="dark" onClick={handleClose}>
             Cerrar
           </Button>
+          <Link to={`/invitacion/${id}`}>
+            Ir a details
+          </Link>
         </Modal.Footer>
       </Modal>
     </>

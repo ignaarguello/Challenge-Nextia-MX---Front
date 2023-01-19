@@ -19,7 +19,7 @@ const crear_invitacion = createAsyncThunk('crear_invitacion', async (data) => {
 })
 
 const get_mis_invitaciones = createAsyncThunk('get_mis_invitaciones', async (id) => {
-    let url = `${BASE_URL}/invitaciones/?userId=${id}`
+    let url = `${BASE_URL}/invitaciones/?userId=${id}&order=asc`
     try {
         let invitacion = await axios.get(url)
         return {

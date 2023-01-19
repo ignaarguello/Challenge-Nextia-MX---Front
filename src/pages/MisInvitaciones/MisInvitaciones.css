@@ -98,6 +98,13 @@
     font-size: 18.5px;
     margin-top: 1rem;
   }
+
+  .titulo-invitaciones-recientes{
+    font-size: 15px;
+    text-align: center;
+    color: #0d0f19;
+    font-weight: 400;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -144,6 +151,10 @@
   #titulo-no-invitaciones-pendientes{
     font-size: 23px;
   }
+
+  .titulo-invitaciones-recientes{
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -154,7 +165,7 @@
   }
 
   #titulo-MisInvitaciones {
-    font-size: 27px;
+    font-size: 32px;
     margin-left: 7rem;
     margin-top: 5rem;
     color: #ff6a52;
@@ -165,7 +176,7 @@
     border: 1px solid #0d0f19;
     height: 5rem;
     width: 1px;
-    margin-left: 12rem;
+    margin-left: 13.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -188,11 +199,11 @@
   }
 
   .subtitulo-invitado {
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .nombre-invitado {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .entrada-invitado {
@@ -201,12 +212,16 @@
   }
 
   .container-invitado {
-    gap: 5px;
+    gap: 6px;
   }
 
   #titulo-no-invitaciones-pendientes{
     font-size: 28px;
     margin-top: 4rem;
+  }
+
+  .titulo-invitaciones-recientes{
+    font-size: 22px;
   }
 }
 
