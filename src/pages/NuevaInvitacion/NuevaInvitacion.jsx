@@ -35,8 +35,7 @@ export default function NuevaInvitacion() {
     }
 
     console.log(entradaRef)
-  
-
+ 
     let res = await dispatch(crear_invitacion(data))
 
     if (res.payload.success) {
