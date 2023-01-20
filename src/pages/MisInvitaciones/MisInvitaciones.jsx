@@ -28,7 +28,7 @@ export default function MisInvitaciones() {
       <div id='container-MisInvitaciones' >
         <h2 id='titulo-MisInvitaciones'>Mis invitaciones</h2>
         <div className='Barra-Left'></div>
-        <h3 className='titulo-invitaciones-recientes'>Aqui se mostrarán tus invitaciones mas próximas a la fecha...</h3>
+        <h3 className='titulo-invitaciones-recientes'>Aqui se mostrarán tus invitaciones, mas próximas a la fecha...</h3>
         {misInvitaciones.length > 0 ?
           <div id='container-invitaciones'>
             {misInvitaciones?.map(element =>
