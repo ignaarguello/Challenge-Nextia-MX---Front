@@ -28,7 +28,12 @@ export default function InvitacionDetails() {
           <div>
             <label className='label-invitacion__details'>Fecha y Hora de Ingreso:</label>
             <li className='li-items__details'>{invitacionFind.fechaEntrada}</li>
-            <li className='li-items__details'>{invitacionFind.horaEntrada}</li>
+            <li className='li-items__details'>{invitacionFind.horaEntrada} hs</li>
+          </div>
+          <div>
+            <label className='label-invitacion__details'>Anfitrión:</label>
+            <li className='li-items__details'>{invitacionFind?.userId?.nombre} {invitacionFind?.userId?.apellidos}</li>
+            <span className='li-id__details'>{invitacionFind?.userId?._id}</span>
           </div>
         </ul>
       </div>

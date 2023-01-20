@@ -1,7 +1,7 @@
 @media screen and (min-width: 320px) {
   #container-general-invitacion__details {
     background-color: #0d0f19;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   #titulo-invitacion__details {
@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     list-style: inside;
-    gap: 2rem;
+    gap: 3rem;
     list-style-type: circle;
   }
 
@@ -51,6 +51,12 @@
 
   .li-items__details {
     color: white;
+  }
+
+  .li-id__details{
+    font-size: 13px;
+    color: rgb(60, 59, 59);
+    margin-left: 1.5rem;
   }
 }
 
@@ -115,7 +121,7 @@
 @media screen and (min-width: 1440px) {
   #container-general-invitacion__details {
     background-color: #0d0f19;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   #titulo-invitacion__details {
@@ -137,7 +143,7 @@
     flex-direction: column;
     justify-content: center;
     list-style: inside;
-    gap: 2rem;
+    gap: 1rem;
     list-style-type: circle;
   }
 
