@@ -31,13 +31,15 @@ export default function ButtonModal(props) {
           <h3 className='info-card__modal'>Hora de entrada: {hora} hs</h3>
           <h3 className='info-card__modal'>Caducidad: {caducidad}</h3>
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className='footer-modal'>
           <Button variant="dark" onClick={handleClose}>
             Cerrar
           </Button>
-          <Link to={`/invitacion/${id}`}>
+          <Button variant="dark">
+          <Link to={`/invitacion-details/${id}`} target={'_blank'}>
             Ir a details
           </Link>
+          </Button>
         </Modal.Footer>
       </Modal>
     </>

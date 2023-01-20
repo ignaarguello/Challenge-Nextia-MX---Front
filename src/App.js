@@ -13,10 +13,7 @@ import Home from './pages/Home';
 import MisInvitacion from './pages/MisInvitaciones/MisInvitaciones';
 import NuevaInvitacion from './pages/NuevaInvitacion/NuevaInvitacion'
 import Info from './pages/Info'
-
-//? Importamos el 'Layout'
-import Layout from './layout/Layout'
-
+import InvitacionDetails from './pages/InvitacionDetails/InvitacionDetails';
 
 //? Importamos proteccion de rutas
 import ProteccionRutas from './components/ProteccionRutas/ProteccionRutas'
@@ -37,7 +34,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<SignIn />} />
+        <Route path="/" element={<SignIn />} /> 
+        <Route path="/invitacion-details/:id" element={<InvitacionDetails />} />    
         <Route element={<ProteccionRutas isAllowed={loggeado === false} reDirect={"/home"} />}>
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
