@@ -62,7 +62,6 @@ export default function NuevaInvitacion() {
     }
   }
 
-
   return (
     <Layout>
       <div id='containerNuevaInvitacion'>

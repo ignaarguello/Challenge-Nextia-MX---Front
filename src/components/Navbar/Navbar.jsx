@@ -29,6 +29,7 @@ export default function Navbar() {
       }
     })
   }
+  
 
   return (
     <div id='container-general__navbar'>
