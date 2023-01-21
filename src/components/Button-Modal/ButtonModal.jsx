@@ -25,7 +25,7 @@ export default function ButtonModal(props) {
           <Modal.Title className='titulo-modal'>Detalles de Invitación</Modal.Title>
         </Modal.Header>
         <Modal.Body className="body-modal">
-          <QRCode className='QR-CODE' value="https://www.google.com" fgColor='#071431' />
+          <QRCode className='QR-CODE' value={`https://nextiafront.vercel.app/invitacion-details/${id}`} fgColor='#071431' />
           <h3 className='titulo-invitado__modal'>Invitado: {nombre}</h3>
           <h3 className='info-card__modal'>Entrada: {fecha}</h3>
           <h3 className='info-card__modal'>Hora de entrada: {hora} hs</h3>
@@ -34,11 +34,6 @@ export default function ButtonModal(props) {
         <Modal.Footer className='footer-modal'>
           <Button variant="dark" onClick={handleClose}>
             Cerrar
-          </Button>
-          <Button variant="dark">
-          <Link to={`/invitacion-details/${id}`} target={'_blank'}>
-            Ir a details
-          </Link>
           </Button>
         </Modal.Footer>
       </Modal>

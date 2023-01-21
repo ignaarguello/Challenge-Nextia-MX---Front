@@ -39,7 +39,7 @@ export default function Navbar() {
         <div className="item-nav__sign-out" onClick={logout}>- Cerrar Sesión -</div>
       </div>
       <div id='container-logo-nav'>
-        <a href="https://nextia.mx/" className='ref-container-nav'><img id='logo-netxia-nav' src="https://nextia.mx/wp-content/uploads/2022/05/logo-nextia.png" alt="" /></a>
+        <a href="https://nextia.mx/" className='ref-container-nav'><img id='logo-netxia-nav' src="../logo-nextia.png" alt="" /></a>
       </div>
     </div>
   )

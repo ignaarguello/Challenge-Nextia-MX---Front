@@ -38,7 +38,7 @@ export default function InvitacionDetails() {
         </ul>
       </div>
       <div id='container-logo__details'>
-        <a href="https://nextia.mx/" className='ref-logo__details'><img id='logo-netxia__details' src="https://nextia.mx/wp-content/uploads/2022/05/logo-nextia.png" alt="" /></a>
+        <a href="https://nextia.mx/" className='ref-logo__details'><img id='logo-netxia__details' src="../logo-nextia.png" alt="" /></a>
       </div>
     </div>
   )
