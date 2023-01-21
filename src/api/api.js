@@ -1,7 +1,3 @@
-let BASE_URL = "http://localhost:8080";
-
-if (process.env.NODE_ENV === 'production') {
-    BASE_URL = process.env.REACT_APP_URL
-}
+let BASE_URL = "https://challenge-nextia-mx-back.up.railway.app";
 
 module.exports = BASE_URL
