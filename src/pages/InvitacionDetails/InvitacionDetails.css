@@ -1,0 +1,179 @@
+@media screen and (min-width: 320px) {
+  #container-general-invitacion__details {
+    background-color: #0d0f19;
+    min-height: 100vh;
+  }
+
+  #titulo-invitacion__details {
+    font-size: 23px;
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    padding-top: 3rem;
+  }
+
+  #container-datos-invitacion__details {
+    margin-top: 5rem;
+  }
+
+  #ul-container__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: inside;
+    gap: 3rem;
+    list-style-type: circle;
+  }
+
+  .label-invitacion__details {
+    color: #ff6a52;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  #container-logo__details {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8rem;
+    align-items: center;
+  }
+
+  #logo-netxia__details {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .ref-logo__details {
+    display: flex;
+    justify-content: center;
+  }
+
+  .li-items__details {
+    color: white;
+  }
+
+  .li-id__details{
+    font-size: 13px;
+    color: rgb(60, 59, 59);
+    margin-left: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #container-general-invitacion__details {
+    background-color: #0d0f19;
+    height: 100vh;
+  }
+
+  #titulo-invitacion__details {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    padding-top: 3rem;
+  }
+
+  #container-datos-invitacion__details {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #ul-container__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: inside;
+    gap: 2rem;
+    list-style-type: circle;
+  }
+
+  .label-invitacion__details {
+    color: #ff6a52;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  #container-logo__details {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5.5rem;
+    align-items: center;
+  }
+
+  #logo-netxia__details {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .ref-logo__details {
+    display: flex;
+    justify-content: center;
+  }
+
+  .li-items__details {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #container-general-invitacion__details {
+    background-color: #0d0f19;
+    min-height: 100vh;
+  }
+
+  #titulo-invitacion__details {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    padding-top: 3rem;
+  }
+
+  #container-datos-invitacion__details {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #ul-container__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: inside;
+    gap: 1rem;
+    list-style-type: circle;
+  }
+
+  .label-invitacion__details {
+    color: #ff6a52;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 1.5rem 0;
+  }
+
+  #container-logo__details {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5.5rem;
+    align-items: center;
+  }
+
+  #logo-netxia__details {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .ref-logo__details {
+    display: flex;
+    justify-content: center;
+  }
+
+  .li-items__details {
+    color: white;
+    font-size: 20px;
+  }
+}

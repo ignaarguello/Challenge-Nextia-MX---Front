@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap');
+
+
+.QR-CODE{
+    border: 1px solid gray;
+    border-radius: 25px 0px 25px 0px;
+    padding: 10px;
+    background-color: white;
+}
+
+.body-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta Malar', sans-serif;
+    background-color: #0d0f19;
+    color: white;
+}
+
+.titulo-modal{
+    text-align: center;
+    width: 100%;
+}
+
+.titulo-invitado__modal{
+    color: #ff6a52;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+.info-card__modal{
+    color: black;
+    font-size: 21px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+.footer-modal{
+    font-family: 'Mukta Malar', sans-serif;
+    background-color: #0d0f19;
+    color: white;
+}
