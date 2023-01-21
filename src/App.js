@@ -22,7 +22,6 @@ function App() {
   let dispatch = useDispatch()
   let { loggeado } = useSelector(store => store.userReducer)
 
-
   useEffect(() => {
     let token = JSON.parse(localStorage.getItem('token'))
     // console.log(token?.token.user);

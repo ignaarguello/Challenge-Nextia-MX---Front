@@ -21,8 +21,6 @@ export default function MisInvitaciones() {
 
   console.log(misInvitaciones)
 
-
-
   return (
     <Layout>
       <div id='container-MisInvitaciones' >

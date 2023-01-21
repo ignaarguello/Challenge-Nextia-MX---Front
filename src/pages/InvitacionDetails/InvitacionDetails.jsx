@@ -16,6 +16,7 @@ export default function InvitacionDetails() {
 
   console.log(invitacionFind)
 
+  
   return (
     <div id='container-general-invitacion__details'>
       <h1 id='titulo-invitacion__details'>- Datos de la invitación -</h1>
