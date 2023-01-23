@@ -66,7 +66,7 @@ export default function NuevaInvitacion() {
     <Layout>
       <div id='containerNuevaInvitacion'>
         <h2 id='titulo-nuevaInvitacion'>Nueva Invitación</h2>
-        <div id='container-Form__nuevaInvitacion'>
+        <div id='container-Form__nuevaInvitacion' className='animate__animated animate__fadeIn'>
           <div className='containerInputs'>
             <label className='label__nuevaInvitacion'>Nombre del invitado:</label>
             <input type="text" id='input--name__nuevaInvitacion' className='input__nuevaInvitacion' placeholder='Nombre del invitado' ref={invitadoRef} />

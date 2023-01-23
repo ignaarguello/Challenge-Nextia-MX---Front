@@ -47,11 +47,10 @@ export default function FormSignIn() {
             )
         }
     }
-    
 
     return (
         <div style={{ backgroundColor: '#0d0f19', }}>
-            <div className="flex min-h-screen items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+            <div className="flex h-screen items-center justify-center py-12 px-4 sm:px-6 lg:px-8 animate__animated animate__fadeIn">
                 <div className="w-full max-w-md space-y-8">
                     <div>
                         <img
