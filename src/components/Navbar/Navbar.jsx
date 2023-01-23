@@ -13,7 +13,6 @@ export default function Navbar() {
   let { log_out } = userActions
   let { token } = useSelector(store => store.userReducer)
 
-
   async function logout(event) {
     Swal.fire({
       title: 'Seguro quieres salir?',
@@ -30,7 +29,6 @@ export default function Navbar() {
     })
   }
   
-
   return (
     <div id='container-general__navbar'>
       <div id='container_items-nav'>
