@@ -11,7 +11,7 @@ import SignUp from './pages/SignUp';
 import Home from './pages/Home';
 import MisInvitacion from './pages/MisInvitaciones/MisInvitaciones';
 import NuevaInvitacion from './pages/NuevaInvitacion/NuevaInvitacion'
-import Info from './pages/Info'
+import Info from './pages/Info/Info'
 import InvitacionDetails from './pages/InvitacionDetails/InvitacionDetails';
 
 //? Importamos proteccion de rutas
