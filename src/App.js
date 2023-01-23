@@ -32,9 +32,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<SignIn />} /> 
         <Route path="/invitacion-details/:id" element={<InvitacionDetails />} />    
         <Route element={<ProteccionRutas isAllowed={loggeado === false} reDirect={"/home"} />}>
+        <Route path="/" element={<SignIn />} /> 
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
         </Route>
@@ -42,6 +42,7 @@ function App() {
   
         <Routes>
           <Route element={<ProteccionRutas isAllowed={loggeado === true} reDirect={"/sign-in"} />}>
+            <Route path="/" element={<MisInvitacion />} /> 
             <Route path="/home" element={<MisInvitacion />} />
             <Route path="/my-invitaciones" element={<MisInvitacion />} />
             <Route path="/new-invitacion" element={<NuevaInvitacion />} />

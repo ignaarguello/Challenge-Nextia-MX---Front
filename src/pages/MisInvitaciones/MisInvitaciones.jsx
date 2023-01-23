@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import Layout from '../../layout/Layout';
 import ButtonModal from '../../components/Button-Modal/ButtonModal'
 import { VscClose } from "react-icons/vsc";
+import 'animate.css';
 
 
 export default function MisInvitaciones() {
@@ -28,7 +29,7 @@ export default function MisInvitaciones() {
         <div className='Barra-Left'></div>
         <h3 className='titulo-invitaciones-recientes'>Aqui se mostrarán tus invitaciones, mas próximas a la fecha...</h3>
         {misInvitaciones.length > 0 ?
-          <div id='container-invitaciones'>
+          <div id='container-invitaciones' className='animate__animated animate__fadeIn'>
             {misInvitaciones?.map(element =>
               <div className='container-card_invitacion' key={element._id} >
                 <div className='container-body-invitacion'>
@@ -47,7 +48,7 @@ export default function MisInvitaciones() {
           </div>
           :
           <div id='container-invitaciones'>
-            <h2 id='titulo-no-invitaciones-pendientes'>¡No tienes invitaciones pendientes!</h2>
+            <h2 id='titulo-no-invitaciones-pendientes' className='animate__animated animate__fadeIn'>¡No tienes invitaciones pendientes!</h2>
           </div>
         }
       </div>

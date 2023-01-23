@@ -36,6 +36,11 @@ export default function ButtonModal(props) {
           <Button variant="dark" onClick={handleClose}>
             Cerrar
           </Button>
+          <Button variant="dark" onClick={handleClose}>
+           <Link to={`https://nextiafront.vercel.app/invitacion-details/${id}`}>
+              Ir a details
+           </Link>
+          </Button>
         </Modal.Footer>
       </Modal>
     </>
