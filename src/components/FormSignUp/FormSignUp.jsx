@@ -36,7 +36,7 @@ export default function FormSignUp() {
         if (res.payload.success) {
             Swal.fire({
                 title: 'Excelente!',
-                text: "Usuario fue creado exitosamente. Por favor, revisa tu casilla de correo!",
+                text: "Usuario creado exitosamente. Por favor, revisa tu casilla de correo!",
                 icon: 'success',
                 showCancelButton: false,
                 confirmButtonColor: '#3085d6',
@@ -62,7 +62,7 @@ export default function FormSignUp() {
             <div className="flex min-h-screen items-center justify-center py-12 px-4 sm:px-6 lg:px-8 animate__animated animate__fadeIn">
                 <div className="w-full max-w-md space-y-8">
                     <div>
-                        <img className="mx-auto h-12 w-auto" src="https://nextia.mx/wp-content/uploads/2022/05/logo-nextia.png" alt="Your Company" />
+                        <img className="mx-auto h-12 w-auto" src="../logo-nextia.png" alt="Your Company" />
                         <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-white">
                             Registro
                         </h2>
