@@ -6,9 +6,9 @@
   }
 
   #titulo-MisInvitaciones {
-    font-size: 21px;
+    font-size: 25px;
     margin-left: 1.3rem;
-    margin-top: 2rem;
+    margin-top: 12rem;
     color: #ff6a52;
     font-weight: 300;
   }
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
   }
 
   .container-card_invitacion {
@@ -100,7 +100,7 @@
   }
 
   .titulo-invitaciones-recientes{
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
     color: #0d0f19;
     font-weight: 400;

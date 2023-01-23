@@ -5,6 +5,7 @@
     display: flex;
     background-color: #0d0f19;
     position: fixed;
+    z-index: 10;
   }
 
   #container_items-nav {
