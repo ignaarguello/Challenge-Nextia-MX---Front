@@ -36,7 +36,7 @@ export default function FormSignUp() {
         if (res.payload.success) {
             Swal.fire({
                 title: 'Excelente!',
-                text: "Tu usuario fue creado exitosamente",
+                text: "Usuario fue creado exitosamente. Por favor, revisa tu casilla de correo!",
                 icon: 'success',
                 showCancelButton: false,
                 confirmButtonColor: '#3085d6',
